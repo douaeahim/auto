@@ -836,7 +836,7 @@ p {
           </div>
         </div>
         <div class="column-image">
-          <img src="img/code-app-screenshot.png" alt="Capture d'écran de l'application code">
+          <img src="https://i.pinimg.com/736x/e5/3e/5a/e53e5a8459eb5ef530239194c4b96857.jpg" alt="Capture d'écran de l'application code">
         </div>
       </div>
     </div>
@@ -964,6 +964,92 @@ p {
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <script src="../script2.js"></script>
+  <script >// script2.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Menu mobile (hamburger)
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+  
+  // Fonctionnalité FAQ
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      // Fermer toutes les autres réponses
+      faqQuestions.forEach(q => {
+        if (q !== question) {
+          q.classList.remove('active');
+          q.nextElementSibling.classList.remove('active');
+        }
+      });
+      
+      // Basculer l'état actif de la question cliquée
+      question.classList.toggle('active');
+      const answer = question.nextElementSibling;
+      answer.classList.toggle('active');
+    });
+  });
+  
+  // Bouton Back to Top
+  const backToTopButton = document.getElementById('backToTop');
+  
+  if (backToTopButton) {
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('active');
+      } else {
+        backToTopButton.classList.remove('active');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+  
+  // Animation des barres du hamburger
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.querySelectorAll('.bar').forEach((bar, index) => {
+        if (this.classList.contains('active')) {
+          // Animation pour fermer (transformer en X)
+          if (index === 0) {
+            bar.style.transform = 'rotate(45deg) translate(5px, 5px)';
+          } else if (index === 1) {
+            bar.style.opacity = '0';
+          } else if (index === 2) {
+            bar.style.transform = 'rotate(-45deg) translate(7px, -6px)';
+          }
+        } else {
+          // Réinitialiser à l'état normal
+          bar.style.transform = 'rotate(0) translate(0, 0)';
+          bar.style.opacity = '1';
+        }
+      });
+    });
+  }
+});
+
+  </script>
 </body>
 </html>
