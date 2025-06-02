@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto École Douae - Excellence en Formation Routière</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-car-side"></i></span>
+        <span>AutoÉcole <span class="logo-highlight">Douae</span></span>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
+          <li class="nav-item"><a href="html/code-route.html" class="nav-link">Code de la route</a></li>
+          <li class="nav-item"><a href="html/permis.html" class="nav-link">Permis</a></li>
+          <li class="nav-item"><a href="html/examens.html" class="nav-link">Examens</a></li>
+         
+          <li class="nav-item"><a href="https://wa.me/212681022593?text=Salam%2C%20ana%20bghit%20ntssajel%20f%20formation%20f%20auto-école." target="_blank" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="html/auth.html" class="nav-link btn btn-primary">Inscription</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)), url('img//images.jpg');">
+        <div class="container">
+          <h1 class="hero-title">Votre Permis en Toute Confiance</h1>
+          <p class="hero-text">Formation de qualité avec des instructeurs certifiés pour un apprentissage efficace et sécurisé.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Nos Formations</a>
+            <a href="#" class="btn btn-outline btn-lg">Contactez-nous</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)), url('img/macaron-jeune-conducteur.jpg');">
+        <div class="container">
+          <h1 class="hero-title">Code de la Route Réussi</h1>
+          <p class="hero-text">Préparez votre examen avec nos cours interactifs et nos tests blancs en conditions réelles.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Passer le Test</a>
+            <a href="#" class="btn btn-outline btn-lg">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)), url('img/images\ \(1\).jpg');">
+        <div class="container">
+          <h1 class="hero-title">Taux de Réussite Exceptionnel</h1>
+          <p class="hero-text">90% de nos élèves obtiennent leur permis du premier coup grâce à notre méthode éprouvée.</p>
+          <div class="hero-buttons">
+            <a href="html/nos-resultas.html" class="btn btn-primary btn-lg">Nos Résultats</a>
+            <a href="html/temgoines.html" class="btn btn-outline btn-lg">Témoignages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider-controls">
+      <button class="slider-control prev"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-dots"></div>
+      <button class="slider-control next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
+          <div class="stat-number" data-count="2500">0</div>
+          <div class="stat-label">Élèves formés</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" data-count="90">0</div>
+          <div class="stat-label">Taux de réussite</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-car"></i></div>
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Véhicules modernes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="stat-number" data-count="20">0</div>
+          <div class="stat-label">Moniteurs experts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TYPES DE PERMIS -->
+  <section class="permis-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nos Formations de Permis</h2>
+        <p class="section-subtitle">Choisissez la formation qui correspond à vos besoins</p>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="permis-cards">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3 class="card-title">Permis B</h3>
+          <p class="card-text">Formation complète pour voiture avec code et conduite. Apprenez à conduire en toute sécurité avec nos instructeurs diplômés.</p>
+          <div class="card-features">
+            <div class="feature-item"><i class="fas fa-check"></i> Cours théoriques</div>
+            <div class="feature-item"><i class="fas fa-check"></i> 20h de conduite minimum</div>
+            <div class="feature-item"><i class="fas fa-check"></i> Examens blancs</div>
+          </div>
+          <div class="card-footer">
+            <span class="price">À partir de <span class="price-amount">3,500 DH</span></span>
+            <a href="#" class="btn btn-primary">Détails</a>
+          </div>
+        </div>
+        
+        <div class="card featured">
+          <div class="card-badge">Populaire</div>
+          <div class="card-icon">
+            <i class="fas fa-motorcycle"></i>
+          </div>
+          <h3 class="card-title">Permis A</h3>
+          <p class="card-text">Formation accélérée pour motos avec des moniteurs spécialisés. Obtenez votre permis rapidement et efficacement.</p>
+          <div class="card-features">
+            <div class="feature-item"><i class="fas fa-check"></i> Formation intensive</div>
+            <div class="feature-item"><i class="fas fa-check"></i> Pratique sur circuit</div>
+            <div class="feature-item"><i class="fas fa-check"></i> Sécurité routière</div>
+          </div>
+          <div class="card-footer">
+            <span class="price">À partir de <span class="price-amount">4,200 DH</span></span>
+            <a href="#" class="btn btn-primary">Détails</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3 class="card-title">Permis C</h3>
+          <p class="card-text">Formation professionnelle pour poids lourds avec une approche technique et une attention particulière à la sécurité.</p>
+          <div class="card-features">
+            <div class="feature-item"><i class="fas fa-check"></i> Formation complète</div>
+            <div class="feature-item"><i class="fas fa-check"></i> Manœuvres spécifiques</div>
+            <div class="feature-item"><i class="fas fa-check"></i> Préparation professionnelle</div>
+          </div>
+          <div class="card-footer">
+            <span class="price">À partir de <span class="price-amount">6,800 DH</span></span>
+            <a href="#" class="btn btn-primary">Détails</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="#" class="btn btn-outline">Voir toutes nos formations <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION AVANTAGES -->
+  <section class="advantages">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pourquoi Choisir AutoÉcole Douae?</h2>
+        <p class="section-subtitle">Notre engagement pour votre réussite</p>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="advantage-title">Flexibilité des horaires</h3>
+          <p class="advantage-text">Cours du matin au soir, même le weekend, pour s'adapter à votre emploi du temps.</p>
+        </div>
+        
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-euro-sign"></i>
+          </div>
+          <h3 class="advantage-title">Paiement en plusieurs fois</h3>
+          <p class="advantage-text">Des solutions de paiement adaptées à votre budget sans frais supplémentaires.</p>
+        </div>
+        
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="advantage-title">Localisation centrale</h3>
+          <p class="advantage-text">Notre auto-école est située en centre-ville avec un accès facile en transport.</p>
+        </div>
+        
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-car-crash"></i>
+          </div>
+          <h3 class="advantage-title">Véhicules récents et sécurisés</h3>
+          <p class="advantage-text">Une flotte moderne équipée des dernières technologies de sécurité.</p>
+        </div>
+        
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="advantage-title">Suivi personnalisé</h3>
+          <p class="advantage-text">Un tableau de bord en ligne pour suivre votre progression en temps réel.</p>
+        </div>
+        
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="advantage-title">Équipe expérimentée</h3>
+          <p class="advantage-text">Des moniteurs diplômés avec plus de 10 ans d'expérience moyenne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CODE DE LA ROUTE -->
+  <section class="code-route">
+    <div class="container">
+      <div class="code-container">
+        <div class="code-content">
+          <h2 class="section-title">Préparez votre Code de la Route</h2>
+          <p class="section-subtitle">Accédez à notre plateforme d'apprentissage en ligne</p>
+          <div class="section-divider"></div>
+          
+          <div class="code-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+              <div class="feature-text">Cours multimédias interactifs</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-question-circle"></i></div>
+              <div class="feature-text">Plus de 1000 questions officielles</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="feature-text">Statistiques de progression</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="feature-text">Accessible sur mobile et tablette</div>
+            </div>
+          </div>
+          
+          <div class="code-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Essai Gratuit</a>
+            <a href="#" class="btn btn-outline btn-lg">Voir Démo</a>
+          </div>
+        </div>
+        
+        <div class="code-image">
+          <img src="img/images.jpg" alt="Application Code de la Route" class="img-fluid">
+          <div class="code-badge">
+            <div class="badge-content">
+              <span class="badge-text">Taux de réussite</span>
+              <span class="badge-percent">94%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Ce Que Disent Nos Élèves</h2>
+        <p class="section-subtitle">Ils ont obtenu leur permis avec nous</p>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial active">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "J'ai obtenu mon permis B du premier coup grâce à la qualité de la formation et la patience de mon moniteur. Les véhicules sont récents et bien entretenus, ce qui rend l'apprentissage agréable."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/images (2).jpg" alt="Karim B.">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Karim B.</h4>
+                <div class="author-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "Formation au permis A très professionnelle. Les moniteurs sont compétents et à l'écoute. Le circuit d'entraînement est parfait pour se familiariser avec la moto en toute sécurité."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/images (1).jpg" alt="Sophie M.">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Sophie M.</h4>
+                <div class="author-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "Je recommande vivement cette auto-école pour le permis C. La formation est complète et adaptée aux exigences du métier de routier. J'ai trouvé un emploi immédiatement après l'obtention de mon permis."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="img/21182305-24320603.jpg" alt="Youssef L.">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Youssef L.</h4>
+                <div class="author-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonials-controls">
+        <button class="testimonial-control prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots"></div>
+        <button class="testimonial-control next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="section-title">Contactez-nous</h2>
+          <p class="section-subtitle">Nous sommes à votre disposition pour toute question</p>
+          <div class="section-divider"></div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4 class="info-title">Adresse</h4>
+              <p class="info-text">123 Avenue Mohammed V, Casablanca, Maroc</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4 class="info-title">Téléphone</h4>
+              <p class="info-text">+212 522 123 456<br>+212 600 123 456</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4 class="info-title">Email</h4>
+              <p class="info-text">contact@autoecoledouae.com<br>info@autoecoledouae.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="info-content">
+              <h4 class="info-title">Horaires</h4>
+              <p class="info-text">Lundi-Vendredi: 8h-20h<br>Samedi: 9h-18h<br>Dimanche: Fermé</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3 class="form-title">Envoyez-nous un message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+            </div>
+            <div class="form-group">
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Sujet de votre message</option>
+                <option value="permis-b">Permis B</option>
+                <option value="permis-a">Permis A</option>
+                <option value="permis-c">Permis C</option>
+                <option value="code">Code de la route</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION MAP -->
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.349646143962!2d-7.632787684798961!3d33.59689528073255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzQ4LjgiTiA3wrAzNyc1Mi4xIlc!5e0!3m2!1sen!2sma!4v1620000000000!5m2!1sen!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon"><i class="fas fa-car-side"></i></span>
+            <span>AutoÉcole <span class="logo-highlight">Douae</span></span>
+          </div>
+          <p class="footer-about">AutoÉcole Douae est un centre de formation agréé proposant des formations de qualité pour le permis de conduire et le code de la route à Casablanca depuis 2010.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Liens Utiles</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Nos Formations</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Code de la Route</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Tarifs</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Nos Permis</h4>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Permis B (Voiture)</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Permis A (Moto)</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Permis C (Poids Lourd)</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Conduite Accompagnée</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Formation Remise à Niveau</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-text">Abonnez-vous à notre newsletter pour recevoir nos offres spéciales et actualités.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit" class="btn btn-primary">S'abonner</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2023 AutoÉcole Douae. Tous droits réservés.
+        </div>
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions générales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
